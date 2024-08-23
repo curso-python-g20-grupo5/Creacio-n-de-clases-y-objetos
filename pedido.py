@@ -3,7 +3,7 @@ from te import Te
 sabor = int(
     input(
         "¿Qué sabor de té desea? (Ingrese número de la opción)"
-        "\n1. Té negro \n2. Té verde \n3. Té de hierbas\n"
+        "\n1. Té negro \n2. Té verde \n3. Infusión de hierbas\n"
     )
 )
 
@@ -15,13 +15,13 @@ formato = int(
 )
 
 
-tiempo, recomendacion = Te.retorna_precio(sabor)
-precio = Te.retorna_tiempo_y_recomendacion(formato)
+tiempo, recomendacion = Te.retorna_tiempo_y_recomendacion(sabor)
+precio = Te.retorna_precio(formato)
 
 if sabor == 1:
     sabor_texto = "Té negro"
 elif sabor == 2:
-    sabor_texto = "Té rojo"
+    sabor_texto = "Té verde"
 elif sabor == 3:
     sabor_texto = "Infusión de hierbas"
 
