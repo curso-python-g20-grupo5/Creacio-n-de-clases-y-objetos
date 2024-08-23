@@ -1,31 +1,31 @@
 class Te:
-    duracion = 365
+    duracion = 365 #duracion en dias
 
     @staticmethod
     def retorna_tiempo_y_recomendacion(sabor):
         if sabor == 1:
             return (
-                5,
+                3,
                 "Al desayunar",
             )
         elif sabor == 2:
             return (
-                4,
+                5,
                 "Al medio día",
             )
         elif sabor == 3:
             return (
-                7,
+                6,
                 "Al atardecer",
             )
         else:
-            return 0, "Sabor no válido"
+            return None, "Sabor no válido"
 
     @staticmethod
     def retorna_precio(formato):
-        if formato == 500:
+        if formato == 300:
             return 3000
-        elif formato == 300:
+        elif formato == 500:
             return 5000
         else:
-            return 0
+            return None
