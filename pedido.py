@@ -1,5 +1,7 @@
+#Se importa la clase del primer requerimiento (te.py)
 from te import Te
 
+#Solicitar datos al usuario
 sabor = int(
     input(
         "¿Qué sabor de té desea? (Ingrese número de la opción)"
@@ -14,10 +16,11 @@ formato = int(
     )
 )
 
-
+#Obtener datos usando los métodos estáticos de la clase Te
 tiempo, recomendacion = Te.retorna_tiempo_y_recomendacion(sabor)
 precio = Te.retorna_precio(formato)
 
+# Mostrar información del pedido
 if sabor == 1:
     sabor_texto = "Té negro"
 elif sabor == 2:
