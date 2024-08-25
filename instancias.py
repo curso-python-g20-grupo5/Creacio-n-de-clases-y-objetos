@@ -1,3 +1,4 @@
+#Se importa la clase del primer requerimiento (te.py)
 from te import Te
 
 # Crear dos instancias
