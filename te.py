@@ -1,8 +1,11 @@
 class Te:
-    duracion = 365 #duracion en dias
+    #Atributo de Clase
+    duracion = 365 #duracion en dias (1 año)
 
+    #Método estático para obtener el tiempo de preparación y la recomendación según el sabor ingresado por parámetro
     @staticmethod
     def retorna_tiempo_y_recomendacion(sabor):
+        #Parámetro sabor como un número entero
         if sabor == 1:
             return (
                 3,
@@ -21,6 +24,7 @@ class Te:
         else:
             return None, "Sabor no válido"
 
+    #Método estático para obtener el precio según el formato ingresado por parámetro (número entero). Debe retornar el precio adecuado
     @staticmethod
     def retorna_precio(formato):
         if formato == 300:
